@@ -1,9 +1,9 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ProfilePhotoComponent } from './profile-photo.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [ProfilePhotoComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
