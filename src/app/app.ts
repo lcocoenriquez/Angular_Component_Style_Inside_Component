@@ -1,9 +1,9 @@
 import { Component, signal } from '@angular/core';
-import { ProfilePhotoComponent } from './profile-photo.component';
+import { ProfilePhoto } from './profile-photo.component';
 
 @Component({
   selector: 'app-root',
-  imports: [ProfilePhotoComponent],
+  imports: [ProfilePhoto],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

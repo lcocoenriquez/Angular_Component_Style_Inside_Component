@@ -1,11 +1,9 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { NgOptimizedImage } from '@angular/common';
 
 @Component({
-  selector: 'app-profile-photo',
-  imports: [NgOptimizedImage],
-  template: `<img ngSrc="/200/300" width="200" height="300" alt="A random image from picsum.photos">
-  `,
+  selector: 'profile-photo',
+  standalone: true,
+  template: `<img src="https://picsum.photos/200" alt="A random profile photo">`,
   styles: [`
     img {
       border-radius: 50%;
@@ -16,4 +14,4 @@ import { NgOptimizedImage } from '@angular/common';
   `],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ProfilePhotoComponent { }
+export class ProfilePhoto { }
