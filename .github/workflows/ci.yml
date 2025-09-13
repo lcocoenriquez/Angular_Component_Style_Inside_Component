@@ -28,9 +28,3 @@ jobs:
 
     - name: Build
       run: npm run build -- --configuration production
-
-    - name: Deploy to GitHub Pages
-      uses: angular-schule/angular-cli-ghpages@v1.4.0
-      with:
-        repoToken: ${{ secrets.GITHUB_TOKEN }}
-        prerender: true # Optional: Set to true if you are using prerendering
