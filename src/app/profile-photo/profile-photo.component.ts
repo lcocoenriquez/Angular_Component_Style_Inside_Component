@@ -3,9 +3,10 @@ import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-profile-photo',
+  standalone: true,
+  imports: [NgOptimizedImage],
   templateUrl: './profile-photo.html',
-  styleUrls: ['./profile-photo.css'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [NgOptimizedImage]
+  styleUrl: './profile-photo.css',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ProfilePhotoComponent {}
